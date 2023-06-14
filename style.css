@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /*Paleta de cores*/
+    --brand-color: #00A3FF;
+    --dark-10: #06090F;
+    --dark-20: #151B26;
+    --dark-30: #BFBFBF;
+    --dark-40: #FFFFFF;
+    --support-01: #2962FF;
+    --support-02: #0BB07B;
+    --support-02: #FFCE52;
+    --support-03: #F03D3D;
+    --support-04: #E0E0E0;
+     /*font-family*/
+     --fonte-primaria: 'Inter', sans-serif;
+     --fonte-secundaria: 'Rubik', sans-serif;
+  }
