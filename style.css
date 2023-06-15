@@ -13,6 +13,32 @@
     --support-03: #F03D3D;
     --support-04: #E0E0E0;
      /*font-family*/
-     --fonte-primaria: 'Inter', sans-serif;
+     --fonte-titulos: 'Inter', sans-serif;
      --fonte-secundaria: 'Rubik', sans-serif;
+     --fonte-tam-padrao: 18px;
   }
+
+#bootstrap-overrides {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--dark-10);
+}
+
+#bootstrap-overrides .brand-text {
+    color: var(--brand-color);
+    font-size: 40px;
+    font-family: var(--fonte-titulos);
+}
+
+#bootstrap-overrides .navbar-toggler {
+    border: none;
+}
+
+#bootstrap-overrides .form-control {
+    border-radius: 20px;
+    border: none;
+    background-color: var(--dark-20);
+}
+
+#bootstrap-overrides .bg-color-dark20 {
+    background-color: var(--dark-20);
+}
