@@ -18,9 +18,12 @@
      --fonte-tam-padrao: 18px;
   }
 
+/* Cores */
+
 #bootstrap-overrides {
     font-family: var(--fonte-secundaria);
     background-color: var(--dark-10);
+    
 }
 
 #bootstrap-overrides .brand-text {
@@ -29,16 +32,38 @@
     font-family: var(--fonte-titulos);
 }
 
-#bootstrap-overrides .navbar-toggler {
+/* Border */
+#bootstrap-overrides .border-none {
     border: none;
 }
 
-#bootstrap-overrides .form-control {
-    border-radius: 20px;
-    border: none;
-    background-color: var(--dark-20);
+#bootstrap-overrides .nav-bc {
+    border-color: var(--dark-20)!important;
 }
 
 #bootstrap-overrides .bg-color-dark20 {
     background-color: var(--dark-20);
 }
+
+header nav .container-fluid {
+    scrollbar-width : thin ; /* "auto" or "thin" */
+    scrollbar-color : blue orange !important ; /* scroll thumb and track */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--dark-10);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--brand-color);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-color);
+    cursor: grab;
+  }
