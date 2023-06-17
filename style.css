@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap');
-
 :root {
     /*Paleta de cores*/
     --brand-color: #00A3FF;
@@ -19,11 +18,18 @@
   }
 
 /* Cores */
+#bootstrap-overrides .mobile {
+    display: block;   
+}
+
+#bootstrap-overrides .desktop {
+    display: none
+}
 
 #bootstrap-overrides {
     font-family: var(--fonte-secundaria);
     background-color: var(--dark-10);
-    
+    color: var(--dark-40);
 }
 
 #bootstrap-overrides .brand-text {
@@ -33,10 +39,6 @@
 }
 
 /* Border */
-#bootstrap-overrides .border-none {
-    border: none;
-}
-
 #bootstrap-overrides .nav-bc {
     border-color: var(--dark-20)!important;
 }
@@ -45,25 +47,68 @@
     background-color: var(--dark-20);
 }
 
-header nav .container-fluid {
-    scrollbar-width : thin ; /* "auto" or "thin" */
-    scrollbar-color : blue orange !important ; /* scroll thumb and track */
-}
-
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 0;
     height: 5px;
   }
 
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--dark-10);
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--brand-color);
-  }
+}
 
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: var(--brand-color);
     cursor: grab;
-  }
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+#banner-img {
+    position: absolute;   
+    bottom: 0;
+    width: 100%;
+    opacity: 50%;
+}
+
+.banner-conteudo {
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    left: 44px;
+    padding-right: 44px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-img-container {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #bootstrap-overrides .desktop {
+        display: block;
+    }
+
+    #bootstrap-overrides .mobile {
+        display: none;
+    }
+
+    .banner-img-container {
+        height: 400px;
+    }
+}
+
+
