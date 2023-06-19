@@ -19,6 +19,7 @@
      --fonte-tam-p: 8px;
   }
 
+/* Fontes */
 h1, h2, h3, h4 {
     font-family: var(--fonte-titulos);
     color: var(--dark-40);
@@ -30,7 +31,6 @@ p {
     color: var(--dark-30);
 }
 
-/* Cores */
 #bootstrap-overrides .mobile {
     display: block;   
 }
@@ -50,6 +50,14 @@ p {
     font-size: 40px;
     font-family: var(--fonte-titulos);
 }
+
+
+
+.toggle-container {
+
+}
+
+
 
 /* Border */
 #bootstrap-overrides .nav-bc {
@@ -94,7 +102,15 @@ p {
     position: absolute;   
     bottom: 0;
     width: 100%;
-    opacity: 50%;
+}
+
+.banner-conteudo-fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(270deg, rgba(6, 9, 15, 0.32) 0%, rgba(6, 9, 15, 0.9) 100%);
+    
 }
 
 .banner-conteudo {
@@ -115,39 +131,79 @@ p {
 
 
 /* CARDs */
-
-
 .cartao-conjunto {
     position: relative;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
-.cartao img {
+.cartao-conjunto img {
     width: 100%;
     margin-bottom: .5rem;
+    border-radius: 12px;
+}
+
+.cartao-gradiente {
+    background: linear-gradient(180deg, rgba(6, 9, 15, 0) 0%, #06090F 100%);
+    border-radius: 12px;
 }
 
 .card-conteudo {
     position: absolute;
     width: 100%;
-    bottom: 24px;
+    height: 100%;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
     font-size: var(--fonte-tam-g);
     color: var(--dark-30);
 }
 
 .cartao-titulo {
-   font-size: var(--fonte-tam-g);
+    font-size: var(--fonte-tam-g);
     text-align: center;
+    font-family: var(--fonte-titulos);
+    margin-bottom: 3rem;
 }
 
+#botao-mais {
+    background-color: var(--dark-20);
+    color: var(--dark-40);
+    border: none;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.atualizacoes-linha-dois {
+    display: none;
+   }
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--dark-30);
+    padding-bottom: 10px;
+}
+
+/* Customização para tablets */
 @media screen and (min-width: 768px) {
+   
+
+
     .banner-img-container {
         height: 300px;
     }
+
+    /* CARDS */
+   .atualizacoes-linha-dois {
+    display: flex;
+   }
 }
 
+
+/* Customização para desktop*/
 @media screen and (min-width: 992px) {
     #bootstrap-overrides .desktop {
         display: block;
@@ -155,6 +211,18 @@ p {
 
     #bootstrap-overrides .mobile {
         display: none;
+    }
+
+
+    #caixa-nav {
+    
+    }
+
+    #logo {
+    }
+
+    #busca {
+       display: grid!important;
     }
 
     .banner-img-container {
