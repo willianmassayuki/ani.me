@@ -1,5 +1,11 @@
-### Acesse o deploy neste link: ani-me-willianmassayuki.vercel.app
+### Acesse o deploy neste link: 
+><ani-me-willianmassayuki.vercel.app>
 
+### Para testar
+Redimensione o tamanho da janela do navegador para conferir a responsividade e teste a interação com os elementos da página.
+Para acessar a segunda página clique ou toque no segundo card que diz "Episodio 1 Darling in the Franxx".
+
+Preview
  ![Ani.me - Desafio de implementação de design por Codelandia](image/screenshots/ani.me1.png)
 ##
 ### O desafio
