@@ -12,8 +12,7 @@
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fourth navbar example">
         <div class="container-fluid" id="caixa-nav">
-          <a class="navbar-brand brand-text" id="logo" href="#">Ani.me</a>
-          
+          <a class="navbar-brand brand-text" id="logo" href="index.html">Ani.me</a> 
           <div class="toggle-container">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#busca" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
               <img src="image\search-icon.png"></img>
@@ -22,111 +21,176 @@
               <img src="image\hamburger-icon.png"></img>
             </button>
           </div>
-          
-        
-          
-            <div class="collapse  navbar-collapse"  id="navbarsExample04">
-              <ul class="navbar-nav me-3 ms-auto mb-2 mb-md-0">
-                <li class="nav-item px-3">
-                  <a class="nav-link active" aria-current="page" href="#">Início</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Lista</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Gêneros</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Novos episódios</a>
-                </li>
-              </ul>
-            </div>
-            <div class="collapse navbar-collapse"  id="busca">
-              <form role="search">
-                <input class="form-control bg-color-dark20 rounded-pill border-0" type="search" placeholder="Buscar" aria-label="Search">
-              </form>
-            </div>
-          
-          
-        
+          <div class="collapse  navbar-collapse"  id="navbarsExample04">
+            <ul class="navbar-nav me-3 ms-auto mb-2 mb-md-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Lista</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Gêneros</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Novos episódios</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse"  id="busca">
+            <form role="search">
+              <input class="form-control bg-color-dark20 rounded-pill border-0" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+          </div>
         </div>
       </nav>
     </header>
-    
     <main>
-      <section class="principal mb-5">
-             </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 mb-5" id="container-episodio">
+            <h4 class="mb-4">Darling in the Franxx - Episódio 1</h4>
+            <div class="container-video d-flex align-items-center justify-content-center">
+              <video id="video-episodio" class="w-100" src="image\wallpaper-video.png" autoplay poster="image\wallpaper-video.png" controls>
+                Desculpa, o seu navegador não suporta vídeos incorporados,
+                mas você pode <a href="videofile.ogg">baixá-lo</a>
+                e assistir pelo seu reprodutor de mídia favorito!
+              </video>
+              <button id="botao-play" onclick="play()"><img src="image\youtube-blue.svg" alt="Play"></button>
+            </div>
+            <article></article>
+          </div>
+          <div class="col-lg-4 mb-5 desktop" id="mais-assistidos">
+            <h4 class="mb-4">Mais assistidos</h4>
 
-        <section class="container">
-        </section>
+            <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
+              <div class="container-thumbnail">
+                <img class="thumbnail" src="image\img-10.png" alt="Imagem de capa do card">
+              </div>
+              <div class="card-body">
+                <a href="#">Naruto Shippuden</a>
+                <p>2007</p>
+              </div>
+            </div>
+            <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
+              <div class="container-thumbnail">
+                <img class="thumbnail" src="image\img-9.png" alt="Imagem de capa do card">
+              </div>
+              <div class="card-body">
+                <a href="#">One Piece</a>
+                <p>1999</p>
+              </div>
+            </div>
+            <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
+              <div class="container-thumbnail">
+                <img class="thumbnail" src="image\img-8.png" alt="Imagem de capa do card">
+              </div>
+              <div class="card-body">
+                <a href="#">Shingeki No Kyojin</a>
+                <p>2013</p>
+              </div>
+            </div>
+            <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
+              <div class="container-thumbnail">
+                <img class="thumbnail" src="image\img-7.png" alt="Imagem de capa do card">
+              </div>
+              <div class="card-body">
+                <a href="#">Haikyuu!!</a>
+                <p>2014</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="descricao container mb-5">
+        <div class="d-flex flex-row">
+          <div class="capa">
+            <img class="rounded-3 desktop" src="image\img-26.png" alt="Capa do anime" style="width: 270px; height: 360px;">
+          </div>
+          <div class="d-flex flex-column justify-content-between ml-3">
+            <div class="informacoes">
+              <div class=" mb-2"><h5 class="d-inline">Duração: </h5><p class="d-inline">24 Min.</p></div>
+              <div class=" mb-2"><h5 class="d-inline">Estúdio: </h5><p class="d-inline">Trigger</p></div>
+              <div class=" mb-4"><h5 class="d-inline">Gênero: </h5><p class="d-inline">Drama, Ficção científica, Romance</p></div>
+            </div>
+            <div class="sinopse">
+              <h5>Sinopse:</h5>
+              <p class="m-0">Darling in the Franxx se passa em um futuro distópico e pós-apocalíptico onde os remanescentes da civilização humana abandonaram a superfície do planeta. Adultos e crianças existem em ambientes contrastantes entre si. Os adultos vivem em cidades tecnológicas (latifúndios) chamados de "plantações" (plantations). As crianças são chamadas de "parasitas", sendo elas destituídos de individualidade, e educadas apenas para pilotarem Franxxs em pares (um menino e uma menina) para defender a humanidade. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section class="container">
-        <h4 class="mb-5">Animes recentes</h4>
+        <h4 class="mb-5">Relacionados</h4>
         <div class="row">
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-16.png" alt="">
+                <img class="" src="image\img-6.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Meng Qi Shi Shen</h4>
+              <h4 class="cartao-titulo">Plastic Memories</h4>
             </div>
           </div>
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-15.png" alt="">
+                <img class="" src="image\img-5.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Made in Abyss</h4>
+              <h4 class="cartao-titulo">RahXephon</h4>
             </div>
           </div>
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-14.png" alt="">
+                <img class="" src="image\img-4.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Prima Doll</h4>
+              <h4 class="cartao-titulo">Date A Live</h4>
             </div>
           </div>
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-13.png" alt="">
+                <img class="" src="image\img-3.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Isekai Ojisan</h4>
+              <h4 class="cartao-titulo">Guilty Crown</h4>
             </div>
           </div>
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-12.png" alt="">
+                <img class="" src="image\img-2.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Yuusha, Yamemasu</h4>
+              <h4 class="cartao-titulo">Macross Frontier</h4>
             </div>
           </div>
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
               <div class="cartao-conjunto">
-                <img class="" src="image\img-11.png" alt="">
+                <img class="" src="image\img-1.png" alt="">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
-              <h4 class="cartao-titulo">Kami Kuzu Idol</h4>
+              <h4 class="cartao-titulo">Gundam G</h4>
             </div>
           </div>
         </div>

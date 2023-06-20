@@ -51,14 +51,6 @@ p {
     font-family: var(--fonte-titulos);
 }
 
-
-
-.toggle-container {
-
-}
-
-
-
 /* Border */
 #bootstrap-overrides .nav-bc {
     border-color: var(--dark-20)!important;
@@ -180,6 +172,28 @@ p {
     display: none;
    }
 
+/* Página de exbição */
+
+#container-video {
+    position: relative;
+}
+
+/* Descrição */
+.descricao .capa img {
+    margin-right: 2rem;
+}
+
+.descricao .sinopse p {
+    text-align: justify;
+}
+
+#botao-play {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+       
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -189,8 +203,9 @@ footer {
 
 /* Customização para tablets */
 @media screen and (min-width: 768px) {
-   
-
+    #bootstrap-overrides p {
+        font-size: var(--fonte-tam-g);
+    }
 
     .banner-img-container {
         height: 300px;
@@ -199,6 +214,34 @@ footer {
     /* CARDS */
    .atualizacoes-linha-dois {
     display: flex;
+   }
+
+   /* Mais Assistidos */
+   #card-mais-assistidos {
+    background-color: var(--dark-20);
+    height: 107px;
+    overflow: hidden;
+   }
+
+   .container-thumbnail {
+    position: relative;
+    width: 100px;
+    height: 107px;
+    overflow: hidden;
+   }
+
+   .thumbnail {
+    position: absolute;
+    width: 100%;
+   }
+
+   #card-mais-assistidos .card-body {
+    overflow: hidden;
+   }
+
+   .card-body a {
+    text-decoration-line: none;
+    color: var(--dark-40);
    }
 }
 
