@@ -24,7 +24,7 @@
           <div class="collapse  navbar-collapse"  id="navbarsExample04">
             <ul class="navbar-nav me-3 ms-auto mb-2 mb-md-0">
               <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                <a class="nav-link" aria-current="page" href="index.html">Início</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href="#">Lista</a>
@@ -46,6 +46,7 @@
       </nav>
     </header>
     <main>
+      <!--Player de vídeo-->
       <section class="container">
         <div class="row">
           <div class="col-12 col-lg-8 mb-5" id="container-episodio">
@@ -56,45 +57,45 @@
                 mas você pode <a href="videofile.ogg">baixá-lo</a>
                 e assistir pelo seu reprodutor de mídia favorito!
               </video>
-              <button id="botao-play" onclick="play()"><img src="image\youtube-blue.svg" alt="Play"></button>
+              <button id="botao-play"><img src="image\youtube-blue.svg" alt="Play"></button>
             </div>
             <article></article>
           </div>
+          <!--Mais assistido-->
           <div class="col-lg-4 mb-5 desktop" id="mais-assistidos">
             <h4 class="mb-4">Mais assistidos</h4>
-
             <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
               <div class="container-thumbnail">
-                <img class="thumbnail" src="image\img-10.png" alt="Imagem de capa do card">
+                <img class="thumbnail w-100 position-absolute" src="image\img-10.png" alt="Imagem de capa do card">
               </div>
-              <div class="card-body">
+              <div class="card-body overflow-hidden">
                 <a href="#">Naruto Shippuden</a>
                 <p>2007</p>
               </div>
             </div>
             <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
               <div class="container-thumbnail">
-                <img class="thumbnail" src="image\img-9.png" alt="Imagem de capa do card">
+                <img class="thumbnail w-100 position-absolute" src="image\img-9.png" alt="Imagem de capa do card">
               </div>
-              <div class="card-body">
+              <div class="card-body overflow-hidden">
                 <a href="#">One Piece</a>
                 <p>1999</p>
               </div>
             </div>
             <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
               <div class="container-thumbnail">
-                <img class="thumbnail" src="image\img-8.png" alt="Imagem de capa do card">
+                <img class="thumbnail w-100 position-absolute" src="image\img-8.png" alt="Imagem de capa do card">
               </div>
-              <div class="card-body">
+              <div class="card-body overflow-hidden">
                 <a href="#">Shingeki No Kyojin</a>
                 <p>2013</p>
               </div>
             </div>
             <div class="card flex-row align-items-center mb-3" id="card-mais-assistidos">
               <div class="container-thumbnail">
-                <img class="thumbnail" src="image\img-7.png" alt="Imagem de capa do card">
+                <img class="thumbnail w-100 position-absolute" src="image\img-7.png" alt="Imagem de capa do card">
               </div>
-              <div class="card-body">
+              <div class="card-body overflow-hidden">
                 <a href="#">Haikyuu!!</a>
                 <p>2014</p>
               </div>
@@ -102,7 +103,7 @@
           </div>
         </div>
       </section>
-
+      <!--Descrição-->
       <section class="descricao container mb-5">
         <div class="d-flex flex-row">
           <div class="capa">
@@ -121,9 +122,25 @@
           </div>
         </div>
       </section>
-
-
-
+      <!--Comentários-->
+      <section class="container comentarios mb-5">
+        <h4 class="mb-4">Comentários</h4>
+        <div class="media d-flex flex-row">
+          <img class="align-self-center" style="width: 70px;" src="image\profile-pic-1.png" alt="Imagem de exemplo genérica">
+          <div class="m-4 media-body">
+            <h5 class="mt-0">Ana Júlia</h5>
+            <p class="mb-0">Episodio muito top, já voltou muito bom!</p>
+          </div>
+        </div>
+        <div class="media d-flex flex-row ">
+          <img class="align-self-center" style="width: 70px;" src="image\profile-pic.png" alt="Imagem de exemplo genérica">
+          <div class="m-4 media-body">
+            <h5 class="mt-0">Bruno San</h5>
+            <p class="mb-0">Primeira vez assistindo e já estou adorando :)</p>
+          </div>
+        </div>
+      </section>
+      <!--Relacionados-->
       <section class="container">
         <h4 class="mb-5">Relacionados</h4>
         <div class="row">
@@ -199,7 +216,6 @@
     <footer>
       <p>Todos os direitos reservados aos criadores e produtores dos animes</p>
     </footer>
-
     <!--Script do Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

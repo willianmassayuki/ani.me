@@ -2,7 +2,9 @@
 :root {
     /*Paleta de cores*/
     --brand-color: #00A3FF;
-    --dark-10: #06090F;
+    --brand-color2: #0081cc;
+    --brand-color3: #006199;
+    --dark-10: #06090f;
     --dark-20: #151B26;
     --dark-30: #BFBFBF;
     --dark-40: #FFFFFF;
@@ -31,10 +33,6 @@ p {
     color: var(--dark-30);
 }
 
-#bootstrap-overrides .mobile {
-    display: block;   
-}
-
 #bootstrap-overrides .desktop {
     display: none
 }
@@ -60,6 +58,10 @@ p {
     background-color: var(--dark-20);
 }
 
+#busca input {
+    color: var(--dark-30);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 0;
@@ -75,39 +77,31 @@ p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--brand-color);
-    cursor: grab;
+    background: var(--brand-color2);
 }
 
-.banner-container {
-    position: relative;
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--brand-color3);
 }
+
+/*Banner*/
 
 .banner-img-container {
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    margin-bottom: 50px;
+    height: 250px; 
+    overflow: hidden;  
 }
 
-#banner-img {
-    position: absolute;   
+#banner-img {  
     bottom: 0;
-    width: 100%;
 }
 
 .banner-conteudo-fundo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
     bottom: 0;
     background: linear-gradient(270deg, rgba(6, 9, 15, 0.32) 0%, rgba(6, 9, 15, 0.9) 100%);
-    
 }
 
 .banner-conteudo {
-    position: absolute;
-    z-index: 5;
+
     bottom: 20px;
     left: 44px;
     padding-right: 44px;
@@ -116,11 +110,6 @@ p {
 .banner-conteudo h2 {
     font-size: var(--fonte-tam-g);
 }
-
-.banner-conteudo p {
-    width: 80%;
-}
-
 
 /* CARDs */
 .cartao-conjunto {
@@ -230,15 +219,6 @@ footer {
     overflow: hidden;
    }
 
-   .thumbnail {
-    position: absolute;
-    width: 100%;
-   }
-
-   #card-mais-assistidos .card-body {
-    overflow: hidden;
-   }
-
    .card-body a {
     text-decoration-line: none;
     color: var(--dark-40);
@@ -256,24 +236,12 @@ footer {
         display: none;
     }
 
-
-    #caixa-nav {
-    
-    }
-
-    #logo {
-    }
-
     #busca {
        display: grid!important;
     }
 
     .banner-img-container {
         height: 400px;
-    }
-
-    .banner-conteudo p {
-        width: 50%;
     }
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS do Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS customizado-->
     <link rel="stylesheet" href="style.css">
     <title>Ani.me</title>
 </head>
@@ -13,7 +14,6 @@
       <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fourth navbar example">
         <div class="container-fluid" id="caixa-nav">
           <a class="navbar-brand brand-text" id="logo" href="#">Ani.me</a>
-          
           <div class="toggle-container">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#busca" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
               <img src="image\search-icon.png"></img>
@@ -22,9 +22,6 @@
               <img src="image\hamburger-icon.png"></img>
             </button>
           </div>
-          
-        
-          
             <div class="collapse  navbar-collapse"  id="navbarsExample04">
               <ul class="navbar-nav me-3 ms-auto mb-2 mb-md-0">
                 <li class="nav-item px-3">
@@ -37,7 +34,7 @@
                   <a class="nav-link" href="#">Gêneros</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Novos episódios</a>
+                  <a class="nav-link" href="#ultimas-atualizacoes">Novos episódios</a>
                 </li>
               </ul>
             </div>
@@ -46,15 +43,12 @@
                 <input class="form-control bg-color-dark20 rounded-pill border-0" type="search" placeholder="Buscar" aria-label="Search">
               </form>
             </div>
-          
-          
-        
         </div>
       </nav>
     </header>
     <!--Busca por inicial-->
     <div class="container pb-5">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand">
         <div class="container-fluid flex-nowrap overflow-scroll">
             <ul class="navbar-nav mb-3">
               <li class="nav-item badge rounded-pill mx-3 px-3 bg-color-dark20">
@@ -148,35 +142,34 @@
           <h1 class="fs-2">Últimas novidades</h1>
           <p>O que você vai assistir hoje?</p>
         </div>
-        <div class="container banner-container">
-          <div class="banner-img-container rounded-3">
-            <img class="img-fluid rounded-3" id="banner-img" src="image\wallpaper.png" alt="Imagem de fundo">
+        <div class="container position-relative banner-container">
+          <div class="banner-img-container rounded-3 position-relative mb-5">
+            <img class="w-100 position-absolute" id="banner-img" src="image\wallpaper.png" alt="Imagem de fundo">
           </div>
-          <div class="banner-conteudo-fundo rounded-3 banner-gradiente"></div>
-            <div class="banner-conteudo">
+          <div class="banner-conteudo-fundo rounded-3 banner-gradiente w-100 h-100 position-absolute"></div>
+            <div class="banner-conteudo position-absolute">
               <h2>ONE PUNCH MAN TERÁ TERCEIRA TEMPORADA</h2>
-              <p class="desktop">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE 
+              <p class="desktop w-50">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE 
                   e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando 
                   a produção de uma terceira temporada da adaptação para o anime […]
               </p>
-              <p class="mobile">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e 
+              <p class="mobile w-70">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e 
                 ilustrado por Yusuke Murata, One Punch […]
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="container">
+      <!--Últimas atualizações-->
+      <section class="container" id="ultimas-atualizacoes">
         <h3 class="mb-5">Últimas atualizações</h3>
-
         <div class="col-12" id="destaque-episodios">
           <div class="row">
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-27.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-27.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 24</p>
                   </div>
@@ -188,8 +181,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="episodio-1.html">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-26.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-26.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 1</p>
                   </div>
@@ -201,8 +194,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-28.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-28.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 214</p>
                   </div>
@@ -214,8 +207,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-25.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-25.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 5</p>
                   </div>
@@ -227,8 +220,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-24.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-24.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 1029</p>
                   </div>
@@ -240,8 +233,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-23.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-23.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 2</p>
                   </div>
@@ -250,14 +243,13 @@
                 <h4 class="cartao-titulo">Fuuto Tantei</h4>
               </div>
             </div>
-          </div>
-              
+          </div>  
           <div class="row atualizacoes-linha-dois">
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-22.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-22.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 6</p>
                   </div>
@@ -269,8 +261,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-21.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-21.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 6</p>
                   </div>
@@ -282,8 +274,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-20.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-20.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 16</p>
                   </div>
@@ -295,8 +287,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-19.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-19.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 2</p>
                   </div>
@@ -308,8 +300,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-18.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-18.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 19</p>
                   </div>
@@ -321,8 +313,8 @@
             <div class="col-6 col-md-2">
               <div class="cartao">
                 <a href="#">
-                <div class="cartao-conjunto">
-                  <img class="" src="image\img-17.png" alt="">
+                <div class="cartao-conjunto position-relative">
+                  <img src="image\img-17.png" alt="Card">
                   <div class="card-conteudo cartao-gradiente">
                     <p>Episódio 2</p>
                   </div>
@@ -332,21 +324,20 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="container d-flex flex-column align-items-center col-md-2">
           <button class="w-100" id="botao-mais">Ver mais</button>
         </div>
       </section>
-
+      <!--Animes recentes-->
       <section class="container">
         <h4 class="mb-5">Animes recentes</h4>
         <div class="row">
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-16.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-16.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -356,8 +347,8 @@
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-15.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-15.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -367,8 +358,8 @@
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-14.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-14.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -378,8 +369,8 @@
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-13.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-13.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -389,8 +380,8 @@
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-12.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-12.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -400,8 +391,8 @@
           <div class="col-6 col-md-2">
             <div class="cartao">
               <a href="#">
-              <div class="cartao-conjunto">
-                <img class="" src="image\img-11.png" alt="">
+              <div class="cartao-conjunto position-relative">
+                <img src="image\img-11.png" alt="Card">
                 <div class="card-conteudo cartao-gradiente"></div>
               </div>
               </a>
@@ -414,8 +405,11 @@
     <footer>
       <p>Todos os direitos reservados aos criadores e produtores dos animes</p>
     </footer>
-
+    <script src="script.js"></script>
     <!--Script do Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
