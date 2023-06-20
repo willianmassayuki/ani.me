@@ -5,7 +5,8 @@
 Redimensione o tamanho da janela do navegador para conferir a responsividade e teste a interação com os elementos da página.
 Para acessar a segunda página clique ou toque no segundo card que diz "Episodio 1 Darling in the Franxx".
 
-Preview
+Preview:
+
  ![Ani.me - Desafio de implementação de design por Codelandia](image/screenshots/ani.me1.png)
 ##
 ### O desafio
@@ -27,8 +28,9 @@ Define uma linha e o espaço  em colunas que a div vai ocupar de acordo com o ta
 ~~~html
  <div class="row">
    <div class="col-6 col-md-2">
+   ...
 ~~~
-...
+
 
 Outras classes relevantes: Container, container-fluid e o conjunto navbar e flex.
 
