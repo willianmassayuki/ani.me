@@ -1,7 +1,7 @@
 ### Acesse o deploy neste link: ani-me-willianmassayuki.vercel.app
 
-## [Ani.me - Desafio de implementação de design por Codelandia](image/screenshots/ani.me1.png)
-
+ ![Ani.me - Desafio de implementação de design por Codelandia](image/screenshots/ani.me1.png)
+##
 ### O desafio
 
 Implentar o layout tirado do Figma dispondo de imagens e estilo pré-definidos.
